@@ -141,6 +141,7 @@
 <script>
   // ---- Edit these values ----
   var MAIL_TO      = "hello@example.com";
+  var MAIL_CC      = "test@example.com";
   var MAIL_SUBJECT = "Diwali Greetings | દિવાળીની શુભેચ્છાઓ";
   // Public https URL of the image. Mail apps can't take an attached/embedded image from a mailto link,
   // so the image goes into the body as a clickable link.
@@ -158,6 +159,7 @@
 
   var href = "mailto:" + encodeURIComponent(MAIL_TO) +
              "?subject=" + encodeURIComponent(MAIL_SUBJECT) +
+    "?cc=" + encodeURIComponent(MAIL_CC) +
              "&body=" + encodeURIComponent(MAIL_BODY);
 
   var btn = document.getElementById("sendMail");
