@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Diwali Greetings | દિવાળીની શુભેચ્છાઓ</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;600;700&family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #fbf7f0;
+    --surface: #ffffff;
+    --text: #2a2220;
+    --muted: #6b5f5a;
+    --accent: #b3261e;
+    --accent-text: #ffffff;
+    --line: #e8dfd2;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #1c1715;
+      --surface: #261f1c;
+      --text: #f3ebe4;
+      --muted: #b8aaa1;
+      --accent: #e0574d;
+      --accent-text: #1c1715;
+      --line: #3a302b;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #1c1715;
+    --surface: #261f1c;
+    --text: #f3ebe4;
+    --muted: #b8aaa1;
+    --accent: #e0574d;
+    --accent-text: #1c1715;
+    --line: #3a302b;
+  }
+
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  html { scroll-padding-top: env(safe-area-inset-top, 0px); }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Noto Sans Gujarati", "Noto Serif", system-ui, -apple-system, "Segoe UI", sans-serif;
+    font-size: 17px;
+    line-height: 1.65;
+    padding-top: env(safe-area-inset-top, 0px);
+    /* room so content never hides behind the fixed button bar */
+    padding-bottom: calc(96px + env(safe-area-inset-bottom, 0px));
+  }
+
+  .wrap { max-width: 640px; margin: 0 auto; }
+
+  .hero { margin: 0; }
+  .hero img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    background: var(--line);
+  }
+
+  main { padding: 20px 20px 8px; }
+
+  h1 {
+    font-size: 1.7rem;
+    line-height: 1.25;
+    margin: 0 0 4px;
+    font-weight: 700;
+  }
+  .sub { margin: 0 0 20px; color: var(--muted); font-size: 1.05rem; }
+
+  section {
+    background: var(--surface);
+    border-left: 4px solid var(--accent);
+    padding: 14px 16px;
+    margin: 0 0 16px;
+    border-radius: 4px;
+  }
+  section h2 { font-size: 1.05rem; margin: 0 0 6px; color: var(--accent); }
+  section p { margin: 0; }
+
+  .bar {
+    position: fixed;
+    left: 0; right: 0; bottom: 0;
+    padding: 12px 16px calc(12px + env(safe-area-inset-bottom, 0px));
+    background: var(--bg);
+    border-top: 1px solid var(--line);
+    z-index: 10;
+  }
+  .bar a {
+    display: block;
+    max-width: 640px;
+    margin: 0 auto;
+    text-align: center;
+    text-decoration: none;
+    background: var(--accent);
+    color: var(--accent-text);
+    font: inherit;
+    font-weight: 700;
+    padding: 15px 20px;
+    border-radius: 10px;
+    min-height: 52px;
+  }
+  .bar a:focus-visible { outline: 3px solid var(--text); outline-offset: 3px; }
+  .bar a:active { transform: scale(.98); }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <figure class="hero">
+    <!-- Replace this src with your own image URL (https://...) and update IMAGE_URL in the script below -->
+    <img id="heroImg" alt="Festival of lights greeting" src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 500'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23b3261e'/%3E%3Cstop offset='1' stop-color='%23f2a33a'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='500' fill='url(%23g)'/%3E%3Cg fill='%23fff3d6'%3E%3Cellipse cx='400' cy='330' rx='120' ry='40'/%3E%3Cpath d='M400 120 C370 190 370 230 400 270 C430 230 430 190 400 120Z'/%3E%3C/g%3E%3C/svg%3E">
+  </figure>
+
+  <main>
+    <h1>Happy Diwali<br>દિવાળીની હાર્દિક શુભેચ્છાઓ</h1>
+    <p class="sub">Warm wishes to you and your family<br>આપને અને આપના પરિવારને શુભકામનાઓ</p>
+
+    <section>
+      <h2>English</h2>
+      <p>May this festival of lights bring happiness, health and prosperity to your home. Thank you for being a part of our journey this year.</p>
+    </section>
+
+    <section>
+      <h2>ગુજરાતી</h2>
+      <p>આ પ્રકાશનો તહેવાર આપના ઘરમાં સુખ, સ્વાસ્થ્ય અને સમૃદ્ધિ લાવે. આ વર્ષે અમારી સફરનો ભાગ બનવા બદલ આભાર.</p>
+    </section>
+  </main>
+</div>
+
+<div class="bar">
+  <a id="sendMail" href="#" role="button">Send Mail · મેઈલ મોકલો</a>
+</div>
+
+<script>
+  // ---- Edit these values ----
+  var MAIL_TO      = "hello@example.com";
+  var MAIL_SUBJECT = "Diwali Greetings | દિવાળીની શુભેચ્છાઓ";
+  // Public https URL of the image. Mail apps can't take an attached/embedded image from a mailto link,
+  // so the image goes into the body as a clickable link.
+  var IMAGE_URL    = "https://example.com/diwali-greeting.jpg";
+
+  var MAIL_BODY = [
+    "Happy Diwali! દિવાળીની હાર્દિક શુભેચ્છાઓ!",
+    "",
+    "May this festival of lights bring happiness, health and prosperity to your home.",
+    "આ પ્રકાશનો તહેવાર આપના ઘરમાં સુખ, સ્વાસ્થ્ય અને સમૃદ્ધિ લાવે.",
+    "",
+    "Thank you for being a part of our journey this year.",
+    "આ વર્ષે અમારી સફરનો ભાગ બનવા બદલ આભાર."
+  ].join("\r\n");
+
+  var href = "mailto:" + encodeURIComponent(MAIL_TO) +
+             "?subject=" + encodeURIComponent(MAIL_SUBJECT) +
+             "&body=" + encodeURIComponent(MAIL_BODY);
+
+  var btn = document.getElementById("sendMail");
+  btn.setAttribute("href", href); // fallback if JS clipboard is unavailable
+
+  function toast(msg) {
+    var t = document.createElement("div");
+    t.textContent = msg;
+    t.style.cssText = "position:fixed;left:16px;right:16px;bottom:calc(84px + env(safe-area-inset-bottom,0px));" +
+      "background:#2a2220;color:#fff;padding:12px 14px;border-radius:10px;z-index:20;font-size:15px;text-align:center";
+    document.body.appendChild(t);
+    setTimeout(function () { t.remove(); }, 4000);
+  }
+
+  // Mail apps ignore images in mailto links, so copy the image to the clipboard first,
+  // then open the mail app. The person long-presses the email body and taps Paste.
+  btn.addEventListener("click", function (e) {
+    e.preventDefault();
+    var html = '<img src="' + IMAGE_URL + '" alt="" style="max-width:100%;height:auto">';
+    var done = function (copied) {
+      if (copied) toast("Image copied. Tap the email body and paste · ઈમેઈલમાં પેસ્ટ કરો");
+      setTimeout(function () { window.location.href = href; }, copied ? 900 : 0);
+    };
+    try {
+      if (navigator.clipboard && window.ClipboardItem) {
+        var item = new ClipboardItem({
+          "text/html":  new Blob([html], { type: "text/html" }),
+          "text/plain": new Blob([IMAGE_URL], { type: "text/plain" })
+        });
+        navigator.clipboard.write([item]).then(function () { done(true); }, function () { done(false); });
+        return;
+      }
+    } catch (err) {}
+    done(false);
+  });
+</script>
+</body>
+</html>
